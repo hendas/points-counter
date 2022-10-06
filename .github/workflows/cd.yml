@@ -21,6 +21,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
