@@ -28,10 +28,11 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           port: 22
           script: |
-            cd /home/hendas/projects/points-counter
+            cd ~/projects/points-counter
             git pull origin main
             npm install 
             node -v
+            bash
             nvm use 18
             node -v
             npm run build
