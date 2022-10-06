@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Change Directory
-        run: cd /root/projects/points-counter
+        run: cd /home/hendas/projects/points-counter
 
       - name: Checkout Repo
         uses: actions/checkout@main
