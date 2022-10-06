@@ -29,4 +29,4 @@ jobs:
           port: 22
           script: |
             cd /home/hendas/projects/points-counter
-            pm2 restart static-page-server-8080
+            git pull origin main
