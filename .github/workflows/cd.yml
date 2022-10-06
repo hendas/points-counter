@@ -23,7 +23,7 @@ jobs:
         run: npm run build
 
       - name: list
-        scripts: ls -a
+        run: ls -a
 
       - name: Copy dist to VPS
         uses: appleboy/scp-action@master
