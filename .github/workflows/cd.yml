@@ -12,7 +12,9 @@ jobs:
         uses: actions/checkout@main
 
       - name: Build
-        run: npm run build
+        run: |
+        npm install 
+        npm run build
 
       - name: Deploy
         run: pm2 static-page-server-8080 restart
