@@ -28,7 +28,7 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           port: 22
           script: |
-            cd ~/home/hendas/projects/points-counter
+            cd /home/hendas/projects/points-counter
             git pull origin main
             git status
             npm install 
