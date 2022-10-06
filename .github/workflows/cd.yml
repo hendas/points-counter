@@ -32,7 +32,9 @@ jobs:
             git pull origin main
             npm install 
             node -v
+            curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
             bash
+            nvm install 18
             nvm use 18
             node -v
             npm run build
