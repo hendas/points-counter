@@ -20,10 +20,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Use Node.js 18
-        uses: actions/setup-node@v2
-        with:
-          node-version: 18.x
       - name: Deploy to
         uses: appleboy/ssh-action@master
         with:
@@ -34,4 +30,8 @@ jobs:
           script: |
             cd /home/hendas/projects/points-counter
             git pull origin main
-            ./deploy.sh
+            npm install 
+            node -v
+            nvm use 18
+            node -v
+            npm run build
