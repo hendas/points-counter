@@ -11,10 +11,11 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@main
 
+      - name: Install
+        run: npm install
+
       - name: Build
-        run: |
-        npm install |
-        npm run build
+        run: npm run build
 
       - name: Deploy
         run: pm2 static-page-server-8080 restart
