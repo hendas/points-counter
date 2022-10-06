@@ -29,8 +29,4 @@ jobs:
           port: 22
           script: |
             cd /home/hendas/projects/points-counter
-            git pull origin main
-            git status
-            npm install 
-            npm run build
             pm2 restart static-page-server-8080
