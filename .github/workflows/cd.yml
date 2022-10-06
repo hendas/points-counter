@@ -31,5 +31,7 @@ jobs:
             cd /home/hendas/projects/points-counter
             git pull origin main
             npm install 
+            node -v
             nvm use 18
+            node -v
             npm run build
