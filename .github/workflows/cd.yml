@@ -30,4 +30,5 @@ jobs:
           script: |
             cd /home/hendas/projects/points-counter
             git pull origin main
-            npm install
+            npm install 
+            npm run build
